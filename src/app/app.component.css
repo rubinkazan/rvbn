@@ -15,3 +15,24 @@
 .Aligner-item--bottom {
   align-self: flex-end;
 }
+
+
+a:link{
+  color:black;
+}
+a:visited{
+  color:black;
+}
+a:hover{
+  color:black;
+}
+a:focus{
+  color:black;
+}
+a:active{
+  color:red;
+}
+
+a {
+text-decoration: none;
+}
