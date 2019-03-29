@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class GithubComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit() {
   }
+
 
 }
