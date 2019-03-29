@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
 import { CVComponent } from './cv/cv.component';
 import { GithubComponent } from './github/github.component';
 
 const routes = [
+  { path: '', redirectTo: '/Home', pathMatch: 'full'},
   { path: 'Home', component: HomeComponent, useAsDefault: true },
   { path: 'Github', component: GithubComponent},
   { path: 'CV', component: CVComponent },
@@ -14,9 +16,7 @@ const routes = [
 ]
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes)],
-  exports: [
-    RouterModule
-  ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }
