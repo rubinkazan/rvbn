@@ -8,6 +8,7 @@ import { CVComponent } from './cv/cv.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatChipsModule} from '@angular/material';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatCardModule} from '@angular/material/card';
 import { GithubComponent } from './github/github.component';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -32,6 +33,7 @@ const routes =[
     BrowserAnimationsModule,
     MatChipsModule,
     MatTabsModule,
+    MatCardModule,
     RouterModule.forRoot(
       routes,
       {enableTracing: true}
