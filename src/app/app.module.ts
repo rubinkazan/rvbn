@@ -22,7 +22,7 @@ import { GithubComponent } from './github/github.component';
     GithubComponent,
     CVComponent,
     BlogComponent
-    ],
+      ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
