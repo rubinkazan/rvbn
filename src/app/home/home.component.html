@@ -1,9 +1,24 @@
-<base href="/">
-<div class="Aligner">
+<!-- <div class="Aligner">
   <mat-chip-list>
   <mat-chip>Github</mat-chip>
   <mat-chip>Curriculum Vitae</mat-chip>
   <mat-chip>Blog</mat-chip>
   </mat-chip-list>
-</div>
 
+</div>
+ -->
+
+<div class="Aligner">
+<mat-tab-group>
+  <mat-tab label="Github">
+        <h1>Github stuff</h1>
+    <app-github></app-github>
+  </mat-tab>
+    <mat-tab label="Curriculum Vitae">
+    <h1>CV stuff</h1>
+  </mat-tab>
+      <mat-tab label="Blog">
+        <h1>Blog stuff</h1>
+      </mat-tab>
+</mat-tab-group>
+</div>

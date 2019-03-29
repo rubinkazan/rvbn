@@ -6,8 +6,10 @@ import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
 import { CVComponent } from './cv/cv.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatChipsModule, MatChipList } from '@angular/material';
+import { MatChipsModule} from '@angular/material';
+import { MatTabsModule } from '@angular/material/tabs';
 import { GithubComponent } from './github/github.component';
+import { RouterModule, Routes } from '@angular/router';
 
 const routes =[
   {path: 'Home', component: HomeComponent, useAsDefault: true},
@@ -28,7 +30,12 @@ const routes =[
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatChipsModule
+    MatChipsModule,
+    MatTabsModule,
+    RouterModule.forRoot(
+      routes,
+      {enableTracing: true}
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
