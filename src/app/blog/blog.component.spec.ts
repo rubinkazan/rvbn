@@ -23,3 +23,4 @@ describe('BlogComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+//sperate blog into CS and InfoSec
